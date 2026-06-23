@@ -1,0 +1,335 @@
+ /* Reset and Global Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #dfe9df;
+  color: #3b3939;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #02401d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  
+}
+
+.logo {
+  font-size: 2.0em;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: rgb(235, 229, 229);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bbbab2;
+}
+
+.cta {
+  background-color: rgb(254, 247, 247);
+  color: #9dd9b7;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background-color: #161616;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+  background: url('e_720.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(224, 216, 216);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  background-color: #011b0c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: #021b0d;
+}
+
+/* About Section */
+.about {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #02401d;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about img {
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Destinations Section */
+.destinations {
+  background-color: #02401d;
+  color: white;
+  text-align: center;
+  padding: 80px 50px;
+}
+
+.destinations h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.destination-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.destination-cards .card {
+  background-color: white;
+  color: #2e8b57;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.destination-cards img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.destination-cards h3 {
+  margin: 10px 0;
+}
+
+.destination-cards button {
+  background-color: #02401d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.destination-cards button:hover {
+  background-color: white;
+  color: #02401d;
+}
+
+/* Services Section */
+.services {
+  padding: 80px 50px;
+  text-align: center;
+ 
+}
+
+.services h2 {
+  color: #060606;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 200px;
+  justify-content: center;
+}
+
+
+
+
+
+
+.service-cards .card {
+  background-color: #c2f5c6;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.service-cards button {
+  background-color: #02401d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.service-cards button:hover {
+  background-color: white;
+  color:#02401d;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 50px;
+  text-align: center;
+  background: url('r_720.png') center/cover no-repeat;;
+}
+
+.contact h2 {
+  color: #161616;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #c7c4c4;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  border-color: #2e8b57;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #02401d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  color: #042010;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: #02401d;
+}
+
+
+/* Footer */
+footer {
+  background-color: #02401d;
+  color: rgb(247, 240, 240);
+  text-align: center;
+  padding: 30px 20px;
+}
+.footer-content h4{ 
+  justify-content: right;
+
+}
+
+.footer-content h4  {
+  display: flex;
+  justify-content:right;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .destination-cards, .service-cards {
+    flex-direction: column;
+    align-items: center;
+    color: #060606;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+}
